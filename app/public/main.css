@@ -9,6 +9,7 @@ img {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 li {
   list-style-type: none;
@@ -29,9 +30,11 @@ body .wrapper header {
   top: 0;
   background: #fff;
 }
-body .wrapper header h1 {
+body .wrapper header >a {
   float: left;
   width: 200px;
+  line-height: 100px;
+  font-size: 30px;
 }
 body .wrapper header .nav {
   float: right;
@@ -161,6 +164,20 @@ body .wrapper .slide-wrap .slide-block >section p {
   color: #fff;
   top: 35%;
 }
+body .wrapper #team h2 {
+  text-align: center;
+}
+body .wrapper #team .figures {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+body .wrapper #team .figures .card {
+  width: 25%;
+  float: left;
+  padding: 2%;
+  text-align: center;
+}
 body .wrapper .price-list {
   padding: 70px 100px;
   background: #f0f0f0;
@@ -172,11 +189,13 @@ body .wrapper .price-list .columns {
   padding: 8px;
 }
 body .wrapper .price-list .columns .price {
-  border: 1px solid #eee;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
+}
+body .wrapper .price-list .columns .price:hover {
+  box-shadow: 0 0 10px #72cacb;
 }
 body .wrapper .price-list .columns .price li {
   border-bottom: 1px solid #eee;

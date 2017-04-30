@@ -8,6 +8,7 @@ img
 	height: auto
 a
 	text-decoration none
+	color #000
 li 
 	list-style-type none
 body
@@ -24,9 +25,11 @@ body
 			top 0
 			background: #fff
 			
-			h1
+			>a
 				float left
 				width 200px
+				line-height 100px
+				font-size: 30px
 			.nav
 				float right
 				width 41%
@@ -138,6 +141,18 @@ body
 						transform translateX(-50%)
 						color #fff
 						top 35%		
+		#team
+			h2
+				text-align: center
+			.figures
+				width 80%
+				overflow hidden
+				margin: 0 auto
+				.card
+					width 25%
+					float left
+					padding 2%
+					text-align: center
 		.price-list
 			
 			
@@ -150,9 +165,11 @@ body
 				padding 8px
 				
 				.price
-					border 1px solid #eee
+					
 					display flex
 					flex-direction column-reverse
+					&:hover
+						box-shadow 0 0 10px #72CACB
 					li
 						border-bottom 1px solid #eee
 						text-align: center
