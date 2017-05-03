@@ -4,6 +4,8 @@
   <link rel="stylesheet" href="app/public/main.css"/>
   <meta charset="UTF-8"/>
   <title>Document</title>
+  <script src="app/js/jquery.min.js"></script>
+  <script src="app/js/main.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -14,10 +16,14 @@
         <li><a href="#">portfolio</a></li>
         <li><a href="#team">team</a></li>
         <li><a href="#">blog</a></li>
-        <li><a href="#">contactus</a></li>
+        <li><a href="#fut">contactus</a></li>
       </ul>
     </header>
     <div class="slide-wrap">
+      <article>
+        <h1>This is a main heading</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat minus explicabo, corporis minima eaque saepe hic enim eos tempora ullam!</p><a href="#">Learn More</a>
+      </article>
       <input type="radio" name="but" id="but1" checked="checked"/>
       <input type="radio" name="but" id="but2"/>
       <input type="radio" name="but" id="but3"/>
@@ -29,22 +35,10 @@
         <label for="but4"><span> </span></label>
       </div>
       <div class="slide-block">
-        <section class="slider1">
-          <h2>slider1</h2>
-          <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perspiciatis reprehenderit et possimus facilis delectus necessitatibus, quaerat odit inventore voluptates?</p><img src="./app/img/sld1.png" alt=""/>
-        </section>
-        <section class="slider2">
-          <h2>slider2</h2>
-          <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ex placeat deserunt nesciunt voluptates cumque recusandae, illo delectus commodi eaque!</p><img src="./app/img/sld2.png" alt=""/>
-        </section>
-        <section class="slider3">
-          <h2>slider3</h2>
-          <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore explicabo delectus totam necessitatibus nobis, molestias molestiae. A, ex. Veniam.</p><img src="./app/img/sld3.png" alt=""/>
-        </section>
-        <section class="slider4">
-          <h2>slider4</h2>
-          <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore explicabo delectus totam necessitatibus nobis, molestias molestiae. A, ex. Veniam.</p><img src="./app/img/sld4.png" alt=""/>
-        </section>
+        <section class="slider1"><img src="./app/img/sld1.png" alt=""/></section>
+        <section class="slider2"><img src="./app/img/sld2.png" alt=""/></section>
+        <section class="slider3"><img src="./app/img/sld3.png" alt=""/></section>
+        <section class="slider4"><img src="./app/img/sld4.png" alt=""/></section>
       </div>
     </div>
     <div id="team">
@@ -103,7 +97,7 @@
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
-          <li class="grey">$5.01/Month		</li>
+          <li class="grey">$10.01/ Month		</li>
           <li class="header">Pro	</li>
         </ul>
       </div>
@@ -116,10 +110,21 @@
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum dolor.</li>
-          <li class="grey">$5.01/Month		</li>
+          <li class="grey">$20.01/ Month	</li>
           <li class="header">Premium					</li>
         </ul>
       </div>
     </div>
+    <footer id="fut"><img src="app/img/base.png" alt=""/>
+      <div class="footer-content">
+        <h2>contact us</h2>
+        <form>
+          <input type="text" placeholder="Name"/>
+          <input type="email" placeholder="Email"/><br>
+          <textarea name="" cols="20" rows="10" placeholder="message"></textarea><br>
+          <button type="submit" id="submit" class="form-btn">Send</button>
+        </form>
+      </div>
+    </footer>
   </div>
 </body>

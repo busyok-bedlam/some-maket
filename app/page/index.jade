@@ -4,6 +4,8 @@ head
 	link(rel="stylesheet", href="app/public/main.css")
 	meta(charset="UTF-8")
 	title Document
+	script(src="app/js/jquery.min.js")
+	script(src="app/js/main.js")
 body
 	.wrapper
 		header
@@ -20,8 +22,12 @@ body
 				li
 					a(href="#") blog
 				li
-					a(href="#") contactus
+					a(href="#fut") contactus
 		.slide-wrap
+			article
+				h1 This is a main heading
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat minus explicabo, corporis minima eaque saepe hic enim eos tempora ullam!
+				a(href="#") Learn More
 			input(type="radio" name="but" id="but1" checked)
 			input(type="radio" name="but" id="but2")
 			input(type="radio" name="but" id="but3")
@@ -37,20 +43,12 @@ body
 					span 
 			.slide-block
 				section.slider1
-					h2 slider1
-					p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perspiciatis reprehenderit et possimus facilis delectus necessitatibus, quaerat odit inventore voluptates?
 					img(src="./app/img/sld1.png", alt="")
 				section.slider2
-					h2 slider2
-					p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ex placeat deserunt nesciunt voluptates cumque recusandae, illo delectus commodi eaque!
 					img(src="./app/img/sld2.png", alt="")
 				section.slider3
-					h2 slider3
-					p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore explicabo delectus totam necessitatibus nobis, molestias molestiae. A, ex. Veniam.
 					img(src="./app/img/sld3.png", alt="")
 				section.slider4
-					h2 slider4
-					p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore explicabo delectus totam necessitatibus nobis, molestias molestiae. A, ex. Veniam.
 					img(src="./app/img/sld4.png", alt="")
 		#team
 			h2 The Team
@@ -102,7 +100,7 @@ body
 					li Lorem ipsum dolor.
 					li Lorem ipsum dolor.
 					li Lorem ipsum dolor.
-					li.grey $5.01/Month		
+					li.grey $10.01/ Month		
 					li.header Pro	
 			.columns
 				ul.price
@@ -114,10 +112,19 @@ body
 					li Lorem ipsum dolor.
 					li Lorem ipsum dolor.
 					li Lorem ipsum dolor.
-					li.grey $5.01/Month		
+					li.grey $20.01/ Month	
 					li.header Premium					
-
-
+		footer#fut
+			img(src="app/img/base.png", alt="")
+			.footer-content
+				h2 contact us
+				form
+					input(type="text" placeholder="Name")
+					input(type="email" placeholder="Email")
+					<br>
+					textarea(name="", cols="20", rows="10" placeholder="message")
+					<br>
+					button(type="submit" class="form-btn" id="submit") Send
 
 
 

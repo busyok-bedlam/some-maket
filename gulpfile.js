@@ -4,7 +4,10 @@ var jade = require("gulp-jade");
 const pref  = require('gulp-autoprefixer');
 
 gulp.task('style-compile',function () {
-	gulp.src('./app/style/*styl').pipe(style()).pipe(pref()).pipe(gulp.dest('./app/public/'));
+	gulp.src('./app/style/*styl')
+	.pipe(style())
+	.pipe(pref(['last 15 versions','> 1%','ie 8','ie 7'],{ cascade: true}))
+	.pipe(gulp.dest('./app/public/'));
 	
 })
 gulp.task('jade-compile',function(){

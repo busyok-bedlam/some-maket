@@ -2,6 +2,7 @@
 	margin: 0
 	padding: 0
 	box-sizing border-box
+	border none
 
 img
 	width 100%
@@ -9,6 +10,7 @@ img
 a
 	text-decoration none
 	color #000
+	opacity 1
 li 
 	list-style-type none
 body
@@ -30,6 +32,11 @@ body
 				width 200px
 				line-height 100px
 				font-size: 30px
+				text-transform: capitalize
+				text-indent: 40px
+				color #49CBCD
+				&:hover
+					text-shadow: 0 0 3px #49CBCD
 			.nav
 				float right
 				width 41%
@@ -47,9 +54,11 @@ body
 						height 100%
 						padding 5px
 						color #000
+						text-transform: capitalize
 						&:hover
 							background: #F8F9FB
 							border-bottom 3px solid #4FCACB
+							text-shadow: 0 0 1px #000
 		.slide-wrap
 			width 100%
 			margin-top 100px
@@ -57,6 +66,58 @@ body
 			
 			overflow hidden
 			position: relative
+			filter: grayscale(.4)
+			transition 1s all ease
+			&:hover
+				filter: grayscale(0)
+			&:hover>article>h1
+				text-shadow: 0 0 5px #fff
+			article
+				position: absolute
+				left 0
+				top 0
+				right 0
+				height 100%	
+				h1
+					position: absolute
+					z-index 2
+					color #fff
+					top 30%
+					left 50%
+					transform translateX(-50%)
+					font-size 30px
+					
+				p
+					position: absolute
+					z-index 2
+					top 40%
+					left 50%
+					transform translateX(-50%)
+					color #fff
+					text-align: center
+				a
+					z-index 2
+					color #fff
+					position: absolute
+					bottom 20%
+					left 50%
+					transform translateX(-50%)
+					color #fff
+					text-align: center
+					display block
+					width 150px
+					height 40px
+					border 3px solid #fff
+					line-height 34px
+					border-radius 15px
+					&:hover
+						box-shadow 0 0 10px #fff,inset 0 0 10px #fff
+						text-shadow 0 0 5px #fff
+					&:active 
+						box-shadow none
+						border-color #ccc
+			
+					
 			input
 				display none
 			.controls
@@ -71,8 +132,9 @@ body
 					transform translateY(-50%)
 					text-align: center
 					border-radius 50%
+					box-shadow 0 0 10px #000
 					&:hover
-						box-shadow 0 0 10px #000
+						box-shadow 0 0 15px #8ABFCC
 					&:hover>span
 						border-top 5px solid #4DC4E0
 						border-left 5px solid #4DC4E0
@@ -85,8 +147,8 @@ body
 						border-left 5px solid #000
 						transform rotate(-45deg) 
 						position absolute
-						left 30%
-						top 35%
+						left 33%
+						top 33%
 					
 							
 						
@@ -120,28 +182,16 @@ body
 				margin-left -300%
 			.slide-block		
 				width 400%
-				
+				transition all 1s ease
 				>section
 					float left
 					width 25%
 						
-					transition 1s all ease
+					
 					position relative
-				
-					h2
-						position: absolute
-						text-align: center
-						left 50%
-						transform translateX(-50%)
-						top 25%
-						color #fff
-					p
-						position: absolute
-						left 50%
-						transform translateX(-50%)
-						color #fff
-						top 35%		
+					
 		#team
+			margin-top 30px
 			h2
 				text-align: center
 			.figures
@@ -149,10 +199,16 @@ body
 				overflow hidden
 				margin: 0 auto
 				.card
-					width 25%
+					width 20%
 					float left
-					padding 2%
+					margin-left 5%
 					text-align: center
+					&:hover
+						box-shadow 0 0 7px #000
+					
+					h3
+						padding 10px
+					
 		.price-list
 			
 			
@@ -163,6 +219,7 @@ body
 				width calc(100%/3)
 				float left
 				padding 8px
+			
 				
 				.price
 					
@@ -175,17 +232,54 @@ body
 						text-align: center
 						padding 20px
 						background: #FFFFFF
+						
+					.but	
+						&:hover ~ .header,
+						&:hover > a
+							
+							transition 1s all ease
 						.button
 							background: #788492
 							padding: 10px 30px
 							color #fff
 							border-radius 5px
-					.but
-						&:hover ~ .header,
-						&:hover > a
-							background: #49CBCD
+							
 					.grey
 						background: #F8F9FB
 					.header
 						background: #000
 						color #fff
+		footer
+			position: relative
+			.footer-content	
+				position: absolute
+				top 0
+				left 0
+				right 0
+				height 100%
+				overflow hidden
+				h2
+					text-align: center
+					text-transform capitalize
+					margin-top 10%
+				form
+					float right
+					width 30%
+					border 1px solid #000
+					margin-right 10%
+					margin-top 4%
+					input
+						width 40%
+						display inline-block
+						border 1px solid #ccc
+						padding 5px 10px
+						&:nth-child(1)
+							float right
+					textarea
+						width 100%
+						margin-top 3%
+					button
+						padding 10px
+						margin-top 3%
+			
+			
