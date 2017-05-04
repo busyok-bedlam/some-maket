@@ -3,6 +3,7 @@ html(lang="en")
 head
 	link(rel="stylesheet", href="app/public/main.css")
 	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 	title Document
 	script(src="app/js/jquery.min.js")
 	script(src="app/js/main.js")
@@ -119,8 +120,8 @@ body
 			.footer-content
 				h2 contact us
 				form
-					input(type="text" placeholder="Name")
-					input(type="email" placeholder="Email")
+					input(type="text" placeholder="Name" min="10" max="100" step="10")
+					input(type="email" placeholder="Email" min="10" max="100" step="10")
 					<br>
 					textarea(name="", cols="20", rows="10" placeholder="message")
 					<br>

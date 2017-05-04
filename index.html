@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="app/public/main.css"/>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   <title>Document</title>
   <script src="app/js/jquery.min.js"></script>
   <script src="app/js/main.js"></script>
@@ -119,8 +120,8 @@
       <div class="footer-content">
         <h2>contact us</h2>
         <form>
-          <input type="text" placeholder="Name"/>
-          <input type="email" placeholder="Email"/><br>
+          <input type="text" placeholder="Name" min="10" max="100" step="10"/>
+          <input type="email" placeholder="Email" min="10" max="100" step="10"/><br>
           <textarea name="" cols="20" rows="10" placeholder="message"></textarea><br>
           <button type="submit" id="submit" class="form-btn">Send</button>
         </form>

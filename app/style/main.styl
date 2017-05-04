@@ -1,3 +1,10 @@
+@font-face 
+    font-family: lobster;
+    src: url(../fonts/3952.ttf);
+@font-face 
+    font-family: opsansreg;
+    src: url(../fonts/osreg.ttf);
+
 *
 	margin: 0
 	padding: 0
@@ -14,7 +21,7 @@ a
 li 
 	list-style-type none
 body
-	font: 14px "Sans-serif";
+	 font: 14px opsansreg
 	.wrapper
 		max-width 1920px
 		header
@@ -35,11 +42,13 @@ body
 				text-transform: capitalize
 				text-indent: 40px
 				color #49CBCD
+				font-family: lobster
+				font-size: 3.0714rem
 				&:hover
 					text-shadow: 0 0 3px #49CBCD
 			.nav
 				float right
-				width 41%
+				width 50%
 				height 100%
 				line-height 100px
 				text-align: center
@@ -55,10 +64,13 @@ body
 						padding 5px
 						color #000
 						text-transform: capitalize
+						font-size: 1.0714rem
+						text-align: center
 						&:hover
 							background: #F8F9FB
 							border-bottom 3px solid #4FCACB
 							text-shadow: 0 0 1px #000
+							z-index 1
 		.slide-wrap
 			width 100%
 			margin-top 100px
@@ -95,6 +107,7 @@ body
 					transform translateX(-50%)
 					color #fff
 					text-align: center
+					padding-top 10px
 				a
 					z-index 2
 					color #fff
@@ -194,6 +207,7 @@ body
 			margin-top 30px
 			h2
 				text-align: center
+				padding 10px
 			.figures
 				width 80%
 				overflow hidden
@@ -203,16 +217,15 @@ body
 					float left
 					margin-left 5%
 					text-align: center
-					&:hover
-						box-shadow 0 0 7px #000
-					
 					h3
-						padding 10px
+						padding 6px
+					h3~p
+						margin-bottom 6px
 					
 		.price-list
 			
 			
-			padding 70px 100px
+			padding 5% 10%
 			background: #F0F0F0
 			overflow hidden
 			.columns
@@ -225,12 +238,10 @@ body
 					
 					display flex
 					flex-direction column-reverse
-					&:hover
-						box-shadow 0 0 10px #72CACB
 					li
 						border-bottom 1px solid #eee
 						text-align: center
-						padding 20px
+						padding 10px
 						background: #FFFFFF
 						
 					.but	
@@ -261,7 +272,7 @@ body
 				h2
 					text-align: center
 					text-transform capitalize
-					margin-top 10%
+					margin-top 4%
 				form
 					float right
 					width 30%
@@ -273,13 +284,27 @@ body
 						display inline-block
 						border 1px solid #ccc
 						padding 5px 10px
+						 z-index: 2
 						&:nth-child(1)
 							float right
+						&:required:valid
+							border-color: green
+						&:required:invalid
+							border-color red
 					textarea
 						width 100%
 						margin-top 3%
 					button
-						padding 10px
+						padding 7px 30px
 						margin-top 3%
-			
-			
+						background: #49cbcd
+						color #fff
+						float right
+@media (max-width 780px)
+	.slide-wrap
+		article
+			h1
+				margin-bottom 20px
+	.figures
+		width 100%
+
