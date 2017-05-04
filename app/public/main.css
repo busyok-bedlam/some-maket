@@ -274,8 +274,11 @@ body {
 .wrapper .price-list .columns .price li {
   border-bottom: 1px solid #eee;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   background: #fff;
+}
+.wrapper .price-list .columns .price .but {
+  padding: 15px;
 }
 .wrapper .price-list .columns .price .but:hover ~ .header,
 .wrapper .price-list .columns .price .but:hover > a {
@@ -309,11 +312,11 @@ body {
   text-align: center;
   text-transform: capitalize;
   margin-top: 4%;
+  text-shadow: 0 0 10px #fff;
 }
 .wrapper footer .footer-content form {
   float: right;
   width: 30%;
-  border: 1px solid #000;
   margin-right: 10%;
   margin-top: 4%;
 }
@@ -345,11 +348,6 @@ body {
   color: #fff;
   float: right;
 }
-@media (max-width: 780px) {
-  .slide-wrap article h1 {
-    margin-bottom: 20px;
-  }
-  .figures {
-    width: 100%;
-  }
+.wrapper footer .footer-content form button:hover {
+  box-shadow: 0 0 10px #62f7f7;
 }

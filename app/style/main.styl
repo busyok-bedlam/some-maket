@@ -241,10 +241,11 @@ body
 					li
 						border-bottom 1px solid #eee
 						text-align: center
-						padding 10px
+						padding 10px 0
 						background: #FFFFFF
 						
 					.but	
+						padding 15px
 						&:hover ~ .header,
 						&:hover > a
 							
@@ -273,10 +274,11 @@ body
 					text-align: center
 					text-transform capitalize
 					margin-top 4%
+					text-shadow 0 0 10px #fff
 				form
 					float right
 					width 30%
-					border 1px solid #000
+					
 					margin-right 10%
 					margin-top 4%
 					input
@@ -287,10 +289,12 @@ body
 						 z-index: 2
 						&:nth-child(1)
 							float right
-						&:required:valid
-							border-color: green
-						&:required:invalid
-							border-color red
+						&:required
+							&:valid
+								border-color: green
+						&:required
+							&:invalid
+								border-color red
 					textarea
 						width 100%
 						margin-top 3%
@@ -300,11 +304,6 @@ body
 						background: #49cbcd
 						color #fff
 						float right
-@media (max-width 780px)
-	.slide-wrap
-		article
-			h1
-				margin-bottom 20px
-	.figures
-		width 100%
+						&:hover
+							box-shadow 0 0 10px #62F7F7
 
