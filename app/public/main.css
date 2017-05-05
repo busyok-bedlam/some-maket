@@ -298,6 +298,7 @@ body {
   color: #fff;
 }
 .wrapper footer {
+  color: #fff;
   position: relative;
 }
 .wrapper footer .footer-content {
@@ -322,6 +323,7 @@ body {
 }
 .wrapper footer .footer-content .social .icons {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .wrapper footer .footer-content .social .icons a {
   display: inline-block;
@@ -344,6 +346,9 @@ body {
 }
 .wrapper footer .footer-content .social .icons a:hover {
   box-shadow: 0 0 10px #000;
+}
+.wrapper footer .footer-content .social .adr span {
+  line-height: 1.5;
 }
 .wrapper footer .footer-content form {
   float: right;
