@@ -314,6 +314,37 @@ body {
   margin-top: 4%;
   text-shadow: 0 0 10px #fff;
 }
+.wrapper footer .footer-content .social {
+  float: left;
+  width: 30%;
+  margin-top: 4%;
+  margin-left: 10%;
+}
+.wrapper footer .footer-content .social .icons {
+  margin-top: 10px;
+}
+.wrapper footer .footer-content .social .icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+.wrapper footer .footer-content .social .icons a:nth-child(1) {
+  background: #3b5997;
+}
+.wrapper footer .footer-content .social .icons a:nth-child(2) {
+  background: #46c4f3;
+}
+.wrapper footer .footer-content .social .icons a:nth-child(3) {
+  background: #e44c41;
+}
+.wrapper footer .footer-content .social .icons a:hover {
+  box-shadow: 0 0 10px #000;
+}
 .wrapper footer .footer-content form {
   float: right;
   width: 30%;
